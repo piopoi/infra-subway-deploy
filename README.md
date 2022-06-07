@@ -49,25 +49,28 @@ npm run dev
 
 ### 1단계 - 망 구성하기
 1. 구성한 망의 서브넷 대역을 알려주세요
-- 대역 : 
+- 대역 :
+  - [VPC] piopoi-vpc : 192.168.110.0/24
+  - [서브넷] piopoi-subnet-public-a : 192.168.110.0/26
+  - [서브넷] piopoi-subnet-public-b : 192.168.110.64/26
+  - [서브넷] piopoi-subnet-internal-a : 192.168.110.128/27
+  - [서브넷] piopoi-subnet-admin-a : 192.168.110.160/27
 
 2. 배포한 서비스의 공인 IP(혹은 URL)를 알려주세요
-
-- URL : 
-
-
+- URL :
+  - http://piopoi.kro.kr:8080/
+  - http://52.78.17.92:8080/
 
 ---
 
 ### 2단계 - 배포하기
 1. TLS가 적용된 URL을 알려주세요
-
-- URL : 
+- URL : https://piopoi.kro.kr/
 
 ---
 
 ### 3단계 - 배포 스크립트 작성하기
 
 1. 작성한 배포 스크립트를 공유해주세요.
-
+- [deploy.sh](./deploy.sh)
 
